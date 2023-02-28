@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const People = () => {
   const [people, setPeople] = useState([]);
@@ -32,6 +32,8 @@ const People = () => {
               <h6>
                 {first_name} {last_name}
               </h6>
+
+              {/* <Navigate to={`/people/${id}`} /> */}
             </div>
           );
         })}
