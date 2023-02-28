@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../img/logo.png";
 
 function Nav() {
@@ -35,9 +36,9 @@ function Nav() {
               </a>
             </li>
             <li className="nav-item">
-              <a href="/contact" className="nav-link" aria-current="page">
+              <Link ="/contact" className="nav-link" aria-current="page">
                 Contact
-              </a>
+              </=>
             </li>
           </ul>
         </div>
