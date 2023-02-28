@@ -1,4 +1,4 @@
-import courses from '../data';
+import courses from "../data";
 
 const Courses = () => {
   return (
@@ -9,7 +9,7 @@ const Courses = () => {
           const { id, img, name, text } = course;
           return (
             <div className="col d-flex justify-content-center" key={id}>
-              <div className="card" style={{ width: '18rem' }}>
+              <div className="card" style={{ width: "18rem" }}>
                 <img src={img} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">{name}</h5>
