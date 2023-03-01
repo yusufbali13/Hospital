@@ -11,6 +11,7 @@ const PersonDetail = () => {
   //! Linkteki parametreyi almak icin useParams Hook'u kullanilabilir.
   const { id } = useParams();
   const [person, setPerson] = useState({});
+  const [error, setError] = useState(false);
 
   const getPerson = () => {
     fetch(`https://reqres.in/api/users/${id}`)
